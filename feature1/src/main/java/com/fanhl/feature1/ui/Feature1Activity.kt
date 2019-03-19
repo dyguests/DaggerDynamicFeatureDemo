@@ -24,6 +24,6 @@ class Feature1Activity : BaseActivity() {
             .build()
             .inject(this)
 
-        textView.text = car.wheel.type()
+        textView.text = car.wheel.type
     }
 }

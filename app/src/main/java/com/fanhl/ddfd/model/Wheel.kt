@@ -5,5 +5,5 @@ import javax.inject.Singleton
 
 @Singleton
 class Wheel @Inject constructor() {
-    fun type() = "宝马的轮胎${System.currentTimeMillis()}"
+    val type = "宝马的轮胎${System.currentTimeMillis()}"
 }
