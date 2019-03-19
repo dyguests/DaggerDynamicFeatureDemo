@@ -1,5 +1,6 @@
 package com.fanhl.ddfd.di
 
+import com.fanhl.ddfd.model.Car
 import dagger.Component
 
 @Component(
@@ -7,4 +8,6 @@ import dagger.Component
         AppModule::class
     ]
 )
-interface AppComponent
+interface AppComponent {
+    fun car(): Car
+}
