@@ -1,6 +1,7 @@
 package com.fanhl.ddfd
 
 import android.app.Application
+import com.fanhl.arch.BaseActivity
 import com.fanhl.ddfd.di.AppComponent
 import com.fanhl.ddfd.di.DaggerAppComponent
 
@@ -21,3 +22,13 @@ class App : Application() {
         appComponent = DaggerAppComponent.create()
     }
 }
+
+val BaseActivity.app: App
+    get() {
+        return application as App
+    }
+
+val BaseActivity.appComponent: AppComponent
+    get() {
+        return app.appComponent
+    }
