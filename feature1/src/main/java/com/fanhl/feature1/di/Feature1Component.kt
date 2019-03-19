@@ -7,11 +7,11 @@ import dagger.android.AndroidInjectionModule
 import dagger.android.AndroidInjector
 
 @Component(
-//    modules = [
-//        AndroidInjectionModule::class
-//    ],
+    modules = [
+        AndroidInjectionModule::class
+    ],
     dependencies = [
         AppComponent::class
     ]
 )
-interface Feature1Component
+interface Feature1Component : AndroidInjector<Feature1Activity>
