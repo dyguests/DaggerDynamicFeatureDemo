@@ -18,17 +18,10 @@ object ARouters {
     }
 
     /**
-     * module bizAccount
+     * module feature1
      */
-    object Account {
-        const val LOGIN = "/account/login"
-    }
-
-    /**
-     * module bizVehicle
-     */
-    object Vehicle {
-        const val VEHICLES = "/vehicle/vehicles"
+    object Feature1 {
+        const val Feature1 = "/feature1/feature1"
     }
 }
 
